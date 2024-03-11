@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      background-color: black;
+      width: 748px;
+      height: 748px;
+      grid-template-rows: 414px 130px 155px 22px; 
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+    }
+
+    .items{
+      background-color: #F0F1EC;
+      border: 2px solid black;
+    }
+    .red-box{
+      background-color: #E72F24;
+    }
+    .sec-box{
+     grid-column: span 3;
+    }
+    .third-box{
+
+      grid-row: span 2;
+       
+    }
+    .forth-box{
+      grid-column: span 2;
+      grid-row: span 2;
+      
+    }
+    .fifth-box{
+
+      
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+
+    }
+    .eight-box{
+      background-color: #F9D01E;
+    }
+    .nine-box{
+      background-color: #232629;
+    }
+    .six-box{
+      grid-area: 2 / 4 / 4 / 4;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="items red-box"> red</div>
+    <div class="items sec-box"> 2</div>
+    <div class="items third-box">  3</div>
+    <div class="items forth-box"> 4 </div>
+    <div class="items fifth-box"> blue</div>
+    <div class="items six-box">6 </div>
+    <div class="items seven-box"> Yellow</div>
+    <div class="items eight-box"> black</div>
+    <div class="items nine-box"> 9</div>
+  </div>
+</body>
+
+</html>
