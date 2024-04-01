@@ -1,0 +1,419 @@
+<html>
+    <head>
+<title> Calculator </title>
+<style>
+
+#OverAllpack {
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#blackBody {
+    background-color: rgba(0, 0, 0, 0.828);
+    width: 700px;
+    height: 700px;
+    border-top: 10px solid gray;
+    border-bottom: 5px solid gray;
+    border-left: 5px solid gray;
+    border-right: 5px solid gray;
+    border-radius: 5px;
+}
+
+#firstTopboxBlack {
+    background-color: black;
+    width: 670px;
+    height: 170px;
+    margin-top: -690px;
+    margin-left: 20px;
+    border-bottom: 3px solid white;
+}
+#topWhitebox {
+    background-color: aliceblue;
+    width: 650px;
+    height: 120px;
+    position: relative;
+    left:10px;
+    top: 25px;
+    border-radius: 10px;
+    
+}
+#topGreenbox {
+    background-color: rgba(211, 247, 158, 0.954);
+    width: 500px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    border-radius: 5px;
+
+}
+#secondTopboxBlack {
+    background-color: black;
+    width: 670px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-bottom: 2px solid white;
+}
+.blueSmallbox1 {
+    background-color: aqua;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    border-top: 2px solid white;
+    border-bottom: 9px solid lightskyblue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+}
+.blueSmallbox2 {
+    background-color: aqua;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 130px;
+    top: -41px;
+    border-top: 2px solid white;
+    border-bottom: 9px solid lightskyblue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+}
+.blueSmallbox3 {
+    background-color: aqua;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 230px;
+    top: -102px;
+    border-top: 2px solid white;
+    border-bottom: 9px solid lightskyblue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+}
+.blueSmallbox4 {
+    background-color: aqua;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 330px;
+    top: -162px;
+    border-top: 2px solid white;
+    border-bottom: 9px solid lightskyblue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 2px;
+}
+#solorBox1 {
+    background-color: orangered;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    left: 470px;
+    bottom: 210px;
+    border-radius: 2px;
+}
+#solorBoxline1 {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    left: 500px;
+    bottom: 250px;
+}
+
+#solorBoxline2 {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    left: 535px;
+    bottom: 290px;
+}
+
+#solorBoxline3 {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    left: 570px;
+    bottom: 330px;
+}
+#bottomOverallBox {
+    width: 645px;
+    height: 360px;
+    border: 2px solid black;
+    position: relative;
+    top: 20px;
+    left: 30px;
+
+}
+#bottomFirstbox {
+    width: 80px;
+    height: 348px;
+    border: 2px solid white;
+    position: relative;
+    top: 3px;
+    left: 5px;
+
+}
+.whiteButton {
+    width: 60px;
+    height: 35px;
+    background-color: rgba(240, 248, 255, 0.96);
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-bottom: 10px solid gray;
+    border-radius: 2px;
+    text-align: center;
+    font-style: bold;
+    font-size: 20px;
+}
+#playTrianglebutton {
+    border-left:20px solid black ;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+
+
+}
+#cePlaybutton {
+    width: 60px;
+    height: 55px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 35px;
+    left: 10px;
+    border-radius: 2px;
+    border-bottom: 8px solid gray;
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+}
+#bottonSecondbox {
+    width: 270px;
+    height: 348px;
+    border: 2px solid white;
+    position: relative;
+    bottom: 349px;
+    left: 92px;
+
+}
+#blackButtonsmall {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 40px;
+    font-style: verdana;
+    text-align:left;
+
+
+}
+
+#blackButtonsmall2 {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: relative;
+    left: 97px;
+    bottom: 326px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 40px;
+    font-style: verdana;
+    text-align:left;
+
+}
+#blackButtonsmall3 {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: relative;
+    left: 185px;
+    bottom: 656px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 40px;
+    font-style: verdana;
+    text-align:left;
+
+
+}
+
+#blackButtonsmall4 {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: relative;
+    left: 10px;
+    top: 4px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 40px;
+    font-style: bold;
+    text-align: center;
+
+}
+
+#blackButtonsmall5 {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: relative;
+    left: 100px;
+    top: -328px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 40px;
+    font-style: bold;
+    text-align: center;
+
+}
+#dotInblackBox{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    top: 10px;
+}
+#bottomThirdbox {
+    
+    width: 270px;
+    height: 348px;
+    border: 2px solid white;
+    position: relative;
+    bottom: 701px;
+    left: 369px;
+}
+#blackButtonlarge {
+    width: 65px;
+    height: 152px;
+    background-color: black;
+    position: relative;
+    left: 10px;
+    top: 4px;
+    border-bottom: 4px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+    font-size: 70px;
+    font-style: bold;
+    text-align: center;
+}
+</style>
+    
+
+</head>
+
+    <body>
+    <div id="overAllpack">
+        <div id="blackBody"></div>
+        <div id="firstTopboxBlack">
+            <div id="topWhitebox"> 
+                <div id="topGreenbox">
+
+                </div>
+            </div>
+        </div>
+        <div id="secondTopboxBlack"> 
+            <div class="blueSmallbox1"> 1</div>
+            <div class="blueSmallbox2"> 2</div>
+            <div class="blueSmallbox3"> 3</div>
+            <div class="blueSmallbox4"> 4</div>
+            <div id="solorBox1"></div>
+            <div id="solorBoxline1"></div>
+            <div id="solorBoxline2"></div>
+            <div id="solorBoxline3"></div>
+        </div>
+        <div id="bottomOverallBox">
+            <div id="bottomFirstbox">
+                <div class="whiteButton">
+                    <div id="playTrianglebutton"></div>
+                </div>
+                <br>
+                <div class="whiteButton">GT</div>
+                <br>
+                <div class="whiteButton">MU</div>
+                <br>
+                <div class="whiteButton">+/_</div>
+
+                <div id="cePlaybutton">CE</div>
+            </div>
+            <div id="bottonSecondbox">
+                <div id="blackButtonsmall">7</div>
+                <br>
+                <div id="blackButtonsmall">4</div>
+                <br>
+                <div id="blackButtonsmall">1</div>
+                <br>
+                <div id="blackButtonsmall">0</div>
+
+                <div id="blackButtonsmall2">8</div>
+                <br>
+                <div id="blackButtonsmall2">5</div>
+                <br>
+                <div id="blackButtonsmall2">2</div>
+                <br>
+                <div id="blackButtonsmall2">00</div>
+
+                <div id="blackButtonsmall3">9</div>
+                <br>
+                <div id="blackButtonsmall3">6</div>
+                <br>
+                <div id="blackButtonsmall3">3</div>
+                <br>
+                <div id="blackButtonsmall3">
+                    <div id="dotInblackBox"> </div>
+                </div>
+            </div>
+            <div id="bottomThirdbox">
+                
+                <div id="blackButtonsmall4">÷</div>
+                <br>
+                <div id="blackButtonsmall4">x</div>
+                <br>
+                <div id="blackButtonlarge">+</div>
+
+                <div id="blackButtonsmall5">
+                    <div id=""></div>
+                </div>
+                <br>
+                <div id="blackButtonsmall5">%</div>
+                <br>
+                <div id="blackButtonsmall5">
+                    <div id="minusForblackButton">_</div>
+                </div>
+                <br>
+                <div id="blackButtonsmall5">=</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

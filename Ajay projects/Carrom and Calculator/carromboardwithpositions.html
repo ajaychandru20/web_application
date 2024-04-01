@@ -1,0 +1,508 @@
+<html>
+  <head>
+    <title>CaroomBoard with Position</title>
+    <style>
+      #mainBoard {
+        border: 30px solid black;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 100px;
+        left: 500px;
+        background-color: #f0bc93;
+      }
+      #topPhase {
+        width: 400px;
+        height: 70px;
+        background-color: transparent;
+      }
+      #wholeOne {
+        background-color: gray;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+      }
+      #topside {
+        border: 1px solid black;
+        width: 250px;
+        height: 20px;
+        position: relative;
+        left: 70px;
+        top: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+      }
+      #topSidecorner1 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 3px solid black;
+        position: relative;
+        left: -2px;
+        top: -2px;
+      }
+      #topSidecorner2 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: -2.5px;
+        left: 230px;
+        border: 3px solid black;
+      }
+      #wholeTwo {
+        background-color: gray;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        left: 375px;
+        top: -49px;
+      }
+      #leftPhase {
+        background-color: transparent;
+        width: 60px;
+        height: 250px;
+      }
+      #leftside {
+        border: 1px solid black;
+        width: 20px;
+        height: 250px;
+        position: relative;
+        left: 50px;
+        top: 5px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+        border-top: 4px solid black;
+      }
+      #leftSidecorner1 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        left: -1px;
+        top: -3px;
+        border: 3px solid black;
+      }
+      #leftSidecorner2 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        left: -1px;
+        top: 210px;
+        border: 3px solid black;
+      }
+      #circlePosition {
+        position: relative;
+        top: -15px;
+        left: 15px;
+      }
+      #centerOfcircle {
+        width: 105px;
+        height: 105px;
+        border: 1px solid black;
+        position: relative;
+        top: -160px;
+        left: 130px;
+        border-radius: 50%;
+      }
+      #redCircle1 {
+        background-color: transparent;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        top: 52px;
+        left: 52px;
+      }
+      #blackStar {
+        position: relative;
+        top: -10px;
+        left: -15px;
+      }
+      #firstTriangle {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid black;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(165deg);
+        position: relative;
+        left: 35px;
+        top: -8px;
+      }
+      #secondTriangle {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid black;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(250deg);
+        position: relative;
+        left: 65px;
+        top: -65px;
+      }
+      #thirdTriangle {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid black;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(-15deg);
+        position: relative;
+        left: 60px;
+        top: -95px;
+      }
+      #fourthTriangle {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid black;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(-280deg);
+        position: relative;
+        left: 30px;
+        top: -160px;
+      }
+
+      #redStar {
+        position: relative;
+        transform: rotate(45deg);
+        left: -69px;
+        top: -285px;
+      }
+
+      #firstTriangle1 {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid red;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(165deg);
+        position: relative;
+        left: 35px;
+        top: -8px;
+      }
+      #secondTriangle1 {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid red;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(260deg);
+        position: relative;
+        left: 68px;
+        top: -65px;
+      }
+      #thirdTriangle1 {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid red;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(-15deg);
+        position: relative;
+        left: 60px;
+        top: -95px;
+      }
+      #fourthTriangle1 {
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid transparent;
+        border-left: 20px solid red;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid transparent;
+        transform: rotate(-280deg);
+        position: relative;
+        left: 30px;
+        top: -160px;
+      }
+      #rightPhase {
+        position: relative;
+        top: -360px;
+        left: 340px;
+        background-color: transparent;
+        width: 60px;
+        height: 250px;
+      }
+      #rightside {
+        border: 1px solid black;
+        position: relative;
+        top: 5px;
+        left: -20px;
+        width: 20px;
+        height: 250px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 4px solid black;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+      }
+      #rightSidecorner1 {
+        background-color: rgb(211, 24, 24);
+        border: 4px solid black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: -3px;
+      }
+      #rightSidecorner2 {
+        background-color: rgb(211, 24, 24);
+        border: 4px solid black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: 207px;
+      }
+      #downPhase {
+        background-color: transparent;
+        width: 400px;
+        height: 70px;
+        position: relative;
+        top: -345px;
+      }
+      #downWhole1 {
+        background-color: gray;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        top: 43px;
+      }
+      #downside {
+        border: 1px solid black;
+        width: 250px;
+        height: 20px;
+        position: relative;
+        top: -25px;
+        left: 70px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+      }
+
+      #downSidecorner1 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 4px solid black;
+        position: relative;
+        left: -3px;
+      }
+      #downSidecorner2 {
+        background-color: rgb(211, 24, 24);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: -23px;
+        left: 230px;
+        border: 4px solid black;
+      }
+      #downWhole2 {
+        background-color: gray;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        top: -6px;
+        left: 375px;
+      }
+      #centerDot {
+        border: 3px solid black;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: relative;
+        left: 715px;
+        top: -145px;
+        background-color: red;
+      }
+      #topLeftline {
+        border: 0.5px solid black;
+        width: 0px;
+        height: 120px;
+        background-color: black;
+        position: relative;
+        top: -335px;
+        left: 610px;
+        transform: rotate(135deg);
+      }
+      #topLeftarc {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-left: 2px solid black;
+        border-top: 2px solid yellow;
+        border-right: 2px solid black;
+        border-bottom: 2px solid transparent;
+        position: relative;
+        left: -23px;
+        top: -12px;
+      }
+      #topRightarc {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-left: 2px solid black;
+        border-top: 2px solid yellow;
+        border-right: 2px solid black;
+        border-bottom: 2px solid transparent;
+        position: relative;
+        left: -21px;
+        top: -11px;
+      }
+      #bottomLeftarc {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-left: 2px solid black;
+        border-top: 2px solid yellow;
+        border-right: 2px solid black;
+        border-bottom: 2px solid transparent;
+        position: relative;
+        left: -22px;
+        top: 90px;
+        transform: rotate(180deg);
+      }
+      #bottomRightarc {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-left: 2px solid black;
+        border-top: 2px solid yellow;
+        border-right: 2px solid black;
+        border-bottom: 2px solid transparent;
+        position: relative;
+        left: -22px;
+        top: 90px;
+        transform: rotate(180deg);
+      }
+      #topRightline {
+        border: 0.5px solid black;
+        width: 0px;
+        height: 120px;
+        background-color: black;
+        position: relative;
+        top: -458px;
+        left: 845px;
+        transform: rotate(-135deg);
+      }
+      #bottomLeftline {
+        border: 0.5px solid black;
+        width: 0px;
+        height: 120px;
+        background-color: black;
+        position: relative;
+        top: -335px;
+        left: 610px;
+        transform: rotate(-135deg);
+      }
+      #bottomRightline {
+        border: 0.5px solid black;
+        width: 0px;
+        height: 120px;
+        background-color: black;
+        position: relative;
+        top: -458px;
+        left: 845px;
+        transform: rotate(135deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainBoard">
+      <div id="topPhase">
+        <div id="wholeOne"></div>
+        <div id="topside">
+          <div id="topSidecorner1">
+            <div id="topSidecorner2"></div>
+          </div>
+        </div>
+        <div id="wholeTwo"></div>
+      </div>
+      <div id="leftPhase">
+        <div id="leftside">
+          <div id="leftSidecorner1"></div>
+          <div id="leftSidecorner2"></div>
+        </div>
+      </div>
+      <div id="circlePosition">
+        <div id="centerOfcircle">
+          <div id="redCircle1"></div>
+          <div id="blackStar">
+            <div id="firstTriangle"></div>
+            <div id="secondTriangle"></div>
+            <div id="thirdTriangle"></div>
+            <div id="fourthTriangle"></div>
+          </div>
+          <div id="redStar">
+            <div id="firstTriangle1"></div>
+            <div id="secondTriangle1"></div>
+            <div id="thirdTriangle1"></div>
+            <div id="fourthTriangle1"></div>
+          </div>
+        </div>
+      </div>
+      <div id="rightPhase">
+        <div id="rightside">
+          <div id="rightSidecorner1"></div>
+          <div id="rightSidecorner2"></div>
+        </div>
+      </div>
+      <div id="downPhase">
+        <div id="downWhole1"></div>
+        <div id="downside">
+          <div id="downSidecorner1"></div>
+          <div id="downSidecorner2"></div>
+        </div>
+        <div id="downWhole2"></div>
+      </div>
+    </div>
+    <div id="centerDot"></div>
+    <div id="topLeftline">
+      <div id="topLeftarc"></div>
+    </div>
+    <div id="topRightline">
+      <div id="topRightarc"></div>
+    </div>
+
+    <div id="bottomLeftline">
+      <div id="bottomLeftarc"></div>
+    </div>
+
+    <div id="bottomRightline">
+      <div id="bottomRightarc"></div>
+    </div>
+  </body>
+</html>

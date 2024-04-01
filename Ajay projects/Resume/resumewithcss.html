@@ -1,0 +1,602 @@
+<html>
+    <head>
+        <title>
+            Resume with CSS
+        </title>
+        <style>
+            #container {
+                width: 700px;
+                height: 900px;
+                border: 2px solid transparent;
+                position: relative;
+                left: 250px;
+                top: 50px;
+            }
+            #leftContainer {
+                
+                width: 250px;
+                height: 880px;
+                border: 2px solid transparent;
+                position: relative;
+                left: 10px;
+                top: 10px;
+                background-color: fbf2e9;
+            }
+            #brownBoxleftTop {
+                border: 1px solid 58310e;
+                background-color: 58310e;
+                border-bottom: 10px solid gray;
+                position: relative;
+                width: 249px;
+                height: 130px;
+            }
+            #lightBrownleftTop {
+                width: 150px;
+                height: 200px;
+                border: 1px solid e2b08c;
+                background-color: e2b08c;
+                position: relative;
+                bottom: 142px;
+                left: 47px;
+            }
+            #profilepic {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                position: relative;
+                top: 22px;
+            }
+            #callPng {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                left: 20px;
+                top: 20px;
+
+            }
+            
+            #mailPng {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+            #dropPng {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                left: 20px;
+                top: 20px;
+
+            }
+                        
+            #contactBox {
+                width: 249px;
+                height: 150px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 142px;
+            }
+            #conInfo {
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #skillBox {
+                
+                width: 249px;
+                height: 150px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 142px;
+            }
+            #skillInfo{
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #skillsPoint {
+                
+                position: relative;
+                top: 10px;
+                left: 0px;
+                font-weight:normal;
+                font-size: medium;
+                font-family: Calibri,sans-serif;
+            }
+            #proficiencyBox {
+                
+                width: 249px;
+                height: 270px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 142px;
+
+            }
+            #proficiencyInfo {
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #proficiencyPoints {
+                position: relative;
+                top: 10px;
+            }
+            .progress{
+                background-color: burlywood;
+            }
+            #profileBox {
+                
+                width: 249px;
+                height: 102px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 142px;
+            }
+            #profileInfo {
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #gitPng {
+                
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+            #inPng{
+
+                width: 20px;
+                height: 20px;
+                border-radius: 20%;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+            #rightContainer {
+                width: 430px;
+                height: 880px;
+                border: 1px solid transparent;
+                position: relative;
+                left: 260px;
+                bottom: 874px;
+
+            }
+            #nameBox {
+                width: 428px;
+                height: 90px;
+                border: 1px solid transparent;
+                background-color: fbf2e9;
+
+            }
+            #name {
+                font-size: 60px;
+                font-style: bold;
+                position: relative;
+                top: 30px;
+                left: 20px;
+                font-family: Calibri,sans-serif;
+
+            }
+            #BlacklineForname {
+                width: 450px;
+                border: 1px solid black;
+                background-color: black;
+                position: relative;
+                right: 22px;
+                bottom: 790px;
+
+            }
+            #desigination {
+                width: 428px;
+                height: 47px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+                background-color: fbf2e9;
+
+
+
+            }
+            #Jobrole {
+                
+                font-size: 30px;
+                font-style: bold;
+                text-align:  left;
+                position: relative;
+                top: 5px;
+                left: 15px;
+                font-family: Calibri,sans-serif;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            #personalInfocontainer {
+                
+                width: 428px;
+                height: 160px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+            }
+            #perInfo {
+                font-style: normal;
+                font-family: Calibri, sans-serif;
+                position: relative;
+                bottom: 15px;
+                left: 10px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            #paraForpersonalInfo {
+                position: relative;
+                bottom: 45px;
+                left: 10px;
+                font-size: 13px;
+                font-family: Calibri;
+                font-weight: 100px;
+
+            }
+            #educationInfocontainer {
+                width: 428px;
+                height: 140px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+            }
+            #eduInfo {
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-variant: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                bottom: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+
+
+            }
+            .bommerang{
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+                width: 6px;
+                height: 6px;
+                position: relative;
+                top: 5px;
+                left: 2.5px;
+                transform: rotate(45deg);
+
+            }
+            #bulletPointlarge1 {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background-color: black;
+                position: relative;
+                bottom: 5px;
+                left: 15px;
+            }
+            #eduHeading1 {
+                font-family: Calibri,sans-serif;
+                font-weight: bolder; 
+                line-height: 3px;
+                font-size: 15px;
+                position: relative;
+                bottom: 22px;
+                left: 40px;
+            }
+            #universityName1 {
+                font-style:italic;
+                position: relative;
+                left: 40px;
+                bottom: 15px;
+                font-family: Calibri,sans-serif;
+                font-size: 14px;
+
+            }
+            #universityYear1 {
+                position: relative;
+                left: 350px;
+                bottom: 48px;
+                font-style:normal;
+                font-weight: bold;
+                position: relative;
+                font-family: Calibri,sans-serif;
+                font-size: 14px;
+
+            }
+            #experienceContainer {
+                
+                width: 428px;
+                height: 250px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+            }
+            #expInfo {
+
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #expInfopara1 {
+                position: relative;
+                top: 30px;
+            }
+            #studioShodew {
+                position: relative;
+
+            }
+            #studioShodewPoints {
+                position: relative;
+                bottom: 40px;
+                left: 0px;
+                font-weight:normal;
+                font-size: small;
+                font-family: Calibri,sans-serif;
+            }
+            #expInfopara2 {
+                position: relative;
+                bottom: 5px;
+            }
+            #certificationContainer {
+                width: 428px;
+                height: 120px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+            }
+            #certifiInfo {
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            #honorsContainer {
+                
+                width: 428px;
+                height: 62px;
+                border: 1px solid transparent;
+                position: relative;
+                bottom: 4px;
+
+            }
+            #honorsInfo{
+                
+                font-family: Calibri,sans-serif;
+                font-style: normal; 
+                font-weight: bold; 
+                line-height: 10px;
+                position: relative;
+                font-size: larger;
+                top: 10px;
+                left: 15px;
+                letter-spacing: 2px;
+            }
+            .progress {
+                background-color: f2d9cf;
+                border-radius: 20px;
+                height: 15px;
+                width: 160px;
+                position: relative;
+                top: 5px;
+
+            }
+            .progress-done{
+                background-color: d98d6e;
+                border-radius: 20px;
+                height: 100%;
+                width: 120px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: end;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="leftContainer">
+                    <div id="brownBoxleftTop"></div>
+                    <div id="lightBrownleftTop">
+                        <img id="profilepic" src="svg_images\DSC_0542 copy.jpg" alt="54669">
+                    </div>
+                    <div id="contactBox">
+                        <div id="conInfo"> CONTACT </div>
+                            <img id="callPng" src="svg_images\phone.png">
+                                <div style="position:relative; left: 50px; bottom: 0px;font-size:15px;font-family: Calibri,sans-serif;">+91 8056006039 </div>
+                            <img id="mailPng" src="svg_images\mail.png"> 
+                                <div style="position:relative; left: 50px; bottom: 0px;font-size:15px;font-family: Calibri,sans-serif;">ajaychandru20@gmail.com </div>
+                            <img id="dropPng" src="svg_images\address.png"> 
+                                <div style="position:relative; left: 50px; bottom: 0px;font-size:15px;font-family: Calibri,sans-serif;">Pattabiram, Chennai<br> 600072 </div>
+                    </div>
+                    <div id="skillBox">
+                        <div id="skillInfo"> SKILLS </div>
+                            <ul id="skillsPoint">
+                                <li>Functional Testing</li>
+                                <li>Automation Testing</li>
+                                <li>API Testing</li>
+                                <li>Performance Testing</li>
+                                <li>Database Testing</li>
+                            </ul>
+                    </div>
+                    <div id="proficiencyBox">
+                        <div id="proficiencyInfo">PROFICIENCY</div>
+                        <ul id="proficiencyPoints">
+                        
+                            <li><b>Cypress</b></li>
+                            <div class="progress"> 
+                                <div class="progress-done" done-date="70"> </div>
+                            </div>   
+                            <div id="javaPercentage" style="position: relative; left: 170px; bottom: 13px; font-weight: bold; font-size: small;">80%</div>
+                            <li><b>Postman</b></li>
+                            <div class="progress"> 
+                                <div class="progress-done" done-date="70"> </div>
+                            </div>   
+                            <div id="javascriptPercentage" style="position: relative; left: 170px; bottom: 13px; font-weight: bold; font-size: small;">80%</div>
+
+                            <li><b>JavaScript</b></li>
+                            <div class="progress"> 
+                                <div class="progress-done" done-date="70"></div>
+                            </div>  
+                            <div id="reactPercentage" style="position: relative; left: 170px; bottom: 13px; font-weight: bold; font-size: small;">80%</div>
+
+                            <li><b>MySQL</b></li>
+                            <div class="progress"> 
+                                <div class="progress-done" done-date="70"></div>
+                            </div>   
+                            <div id="mysqlPercentage" style="position: relative; left: 170px; bottom: 13px; font-weight: bold; font-size: small;">80%</div>
+
+                        </ul>    
+
+                    </div>
+                    <div id="profileBox">
+                        <div id="profileInfo">PROFILE</div>
+                        <img id="gitPng" src="svg_images\linkedin.png">
+                                <div style="position:relative; left: 50px; bottom: 0px;font-size:15px;font-family: Calibri,sans-serif;">/ajaychandru20 </div>
+                        <img id="inPng" src="svg_images\github.png">
+                                <div style="position:relative; left: 50px; bottom: 0px;font-size:15px;font-family: Calibri,sans-serif;">/ajaychandru20 </div>    
+                            </div>
+            </div>
+            <div id="rightContainer">
+                    <div id="nameBox"> 
+                        <div id="name"> AJAY.C </div>
+                    </div>
+                    <div id="desigination">
+                        <div id="Jobrole"> QA Analyst</div>
+                    </div>
+                    <div id="personalInfocontainer">
+                        <h3 id="perInfo"> PERSONAL INFO </h3> <br>
+                        <p id="paraForpersonalInfo">
+                            I am a passionate SDET having expertise of 2+
+                            years.<br>
+                            I work closely with my team in developing strong brand identities 
+                            that define and exhibit values, and also profession visual entities to define
+                            <br>your tone.I am a strong team player and a social butterfly.
+                        </p>
+                    </div>
+                    <div id="educationInfocontainer">
+                        <h3 id="eduInfo"> EDUCATION </h3>
+                        <div id="eduFirstpara">
+                            <div id="bulletPointlarge1">
+                                <div class="bommerang"></div>
+                            </div>
+                            <div id="eduHeading1"> Bachelor of Computer Application </div>
+                            <div id="universityName1"> DG Vaishnav college</div>
+                            <div id="universityName1"> Madras Unversity</div>
+                            <div id="universityYear1"> 2017-2020</div>
+                        </div>
+                    </div>
+                    <div id="experienceContainer">
+                        <div id="expInfo"> EXPERIENCE </div>
+                        <div id="expInfopara1">
+                            <div id="bulletPointlarge1">
+                                <div class="bommerang"></div>
+                            </div>
+                            <div id="eduHeading1"> Social Media Manager </div>
+                            <div id="universityName1"> Studio Shodew</div>
+                            <div id="universityYear1">2020-Present </div>
+                            <div id="studioShodew">
+                                <ul id="studioShodewPoints">
+                                    <li>Led a team of 3 designers to develop digital media resource.</li>
+                                    <li>Led an Ad campaign for 4 brands over a 6 month period in driving
+                                        result-oriented growth.</li>
+                                    <li>Developed 200+ digital and print graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="expInfopara2">
+
+                            <div id="bulletPointlarge1">
+                                <div class="bommerang"></div>
+                            </div>
+                            <div id="eduHeading1"> Graphic Designer </div>
+                            <div id="universityName1"> Liceria & Co.</div>
+                            <div id="universityYear1">2017-2021</div>
+                            <div id="studioShodew">
+                                <ul id="studioShodewPoints">
+                                    <li>Developed Branding and Packing design for 4 new branch.</li>
+                                    <li>Designed over 300 social media content.</li>
+                                    <li>Derived visual quality identity and guidlines for branch.</li>
+                                    <li>Other digital and print designs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="certificationContainer">
+                        <div id="certifiInfo"> CERTIFICATIONS </div>
+                        <ul>
+                            <li style="font-size:small; font-weight: bold; font-family: Calibri,sans-serif;"><b>Oracle Certified Junior Associate</b></li>
+                            <div style="font-size:15px;font-family: Calibri,sans-serif;">July 2019</div>
+                            <span style="position:relative; left: 350px; bottom: 20px;font-size:15px;font-family: Calibri,sans-serif;">78%</span>
+                            <li style="font-size:small; font-weight: bold; font-family: Calibri,sans-serif;"><b>Udemy-Design Patterns in Software Modeling and Design</b></li>
+                            <div style="font-size:15px;font-family: Calibri,sans-serif;">Feb 2022</div>
+                        </ul>
+                        
+                        
+                    </div>
+                    <div id="honorsContainer">
+                        <div id="honorsInfo">HONORS</div>
+                        <ul>
+                            <li style="font-size:small; font-weight: bold; font-family: Calibri,sans-serif;"><b>Team of the Year</b></li>
+                            <div style="font-size:15px;font-family: Calibri,sans-serif;">2022, 2023, 2024 </div>
+                        </ul>
+                    </div>
+                    
+                    <div id="BlacklineForname"></div>
+
+
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
