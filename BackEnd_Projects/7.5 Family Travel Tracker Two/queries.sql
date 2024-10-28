@@ -118,3 +118,7 @@ SELECT *
 FROM visited_countries
 JOIN users
 ON users.id = user_id;
+
+-- ALTER TABLE for unique columns, user_id and country should not duplicate --  
+ALTER TABLE visited_countries
+ADD UNIQUE(user_id, country_code) 
